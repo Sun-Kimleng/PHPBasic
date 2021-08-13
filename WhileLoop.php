@@ -30,6 +30,7 @@ while ($i < count($computer)){
         font-weight: bold;
         margin-bottom: -20px;
         }
+        
     </style>
 </head>
 <body>

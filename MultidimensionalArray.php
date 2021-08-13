@@ -18,7 +18,8 @@ $blogs = [
   ];
   print_r($blogs);
   echo '<br>';
-  echo '<br>';
+  echo '<br>'; 
+  
   
   $TwoOfOne = $blogs[1][0];
   echo ("This is ". $TwoOfOne);

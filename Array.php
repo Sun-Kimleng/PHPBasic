@@ -6,6 +6,7 @@
     	.a{
         color: red;
         }
+		//change a class color
     </style>
 </head>
 <body>

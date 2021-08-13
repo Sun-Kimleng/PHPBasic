@@ -32,6 +32,7 @@ while ($i < count($computer)){
     </style>
 </head>
 <body>
+    
 	<h1>Computer</h1>
 	
     <div>

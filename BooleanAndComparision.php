@@ -17,6 +17,8 @@ echo '<br />'.'<br />';
 $num =  2>1;
 echo $num; //return 1 because it's true. If it false, it will return empty
 
+
+
 ?>
 
 

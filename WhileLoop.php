@@ -37,7 +37,7 @@ while ($i < count($computer)){
     <div>
     <?php foreach($computer as $value){ ?>
     <p class="h2"><?php echo $value['Name']; ?><p>
-    <p><?php echo '- '.'Country: '.$value[Country].'<br />'. '- '.'Founder:' .$value['Founder'];?></p><br />
+    <p><?php echo '- '.'Country: '.$value['Country'].'<br />'. '- '.'Founder:' .$value['Founder'];?></p><br />
     <?php } ?>
     </div>
 </body>

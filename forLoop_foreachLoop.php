@@ -1,8 +1,6 @@
 ﻿<!DOCTYPE html>
 <html>
 <body>
-
-
 <?php
 //For loop
 $blogs = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'];
@@ -33,9 +31,9 @@ foreach( $blogs as $value){
  
  echo '<br />'.'<br />';
 foreach($computer as $ComputerDetails){ // use to cycling value from an array
- echo strtoupper($ComputerDetails[Name]). " - " . $ComputerDetails[Country] . " - " . $ComputerDetails['Founder'];
+ echo strtoupper($ComputerDetails['Name']). " - " . $ComputerDetails['Country'] . " - " . $ComputerDetails['Founder'];
  echo '<br />';
-?>
-
+}
+ ?>
 </body>
 </html>

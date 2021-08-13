@@ -27,7 +27,6 @@ echo "<br>";
 echo "<h1 class='a'>"."this month is ".$date."</h1>";
 
 
-
 $allDay = ['Monday', 'Tuesday', 'Wednesday', 'Thursday','Friday', 'Saturday', 'Sunday'];
 print_r ($allDay);
 echo count($allDay);

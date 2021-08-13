@@ -22,6 +22,7 @@ while ($i < count($computer)){
 ?>
 <!DOCTYPE html>
 <html>
+    
 <head>
 	<style>
     .h2{

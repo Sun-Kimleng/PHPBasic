@@ -1,5 +1,5 @@
 ﻿<!DOCTYPE html>
-//AH oun net pong toch
+//AH PEK NET PONG TOCH
 <html>
 <head>
 	<style>

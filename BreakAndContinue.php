@@ -27,6 +27,19 @@ $computer = [
 	 }
 	 echo $computers['Name'].'<br .>'; //echo all Name values of multidemension array
   }
+  echo '<br />'.'<br />';
+  
+	   
+ foreach ($computer as $computers){
+	 
+	 if($computers['Name'] === 'Lenovo'){
+		 continue; // skip the code below this continue keyword and looping again the output has no 'lenovo';
+		 
+	 }
+	 echo $computers['Name'].'<br .>'; //echo all Name values of multidemension array
+  }
+  
+  
 ?>
 
 </body>

@@ -1,0 +1,13 @@
+﻿//if you get user sign-in error: In command prompt paste this command in
+git config --global user.email yournew@email.com
+git config --global user.name yournewgoodname
+
+//to clone repository go to view -> command palatte
+clone #link
+
+//remote after first create a repository 
+- go to source control (ctr +shift + g)
+- go to command pallete type: add remote #link
+
+//Chage branch
+just go to master branch at left-bottom on screen and then change it to another branch

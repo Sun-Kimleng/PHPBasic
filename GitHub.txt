@@ -1,4 +1,4 @@
-﻿//if you get user sign-in error: In command prompt paste this command in
+﻿//if you've got user sign-in error: In command prompt paste this command in
 git config --global user.email yournew@email.com
 git config --global user.name yournewgoodname
 

@@ -1,12 +1,43 @@
 <?php
 
 	if(isset($_POST['submit'])){
-		echo $_POST ['email'];
-		echo $_POST ['title'];
-		echo $_POST ['ingredients'];
+		// echo htmlspecialchars( $_POST ['email']);
+		// echo htmlspecialchars(POST ['title']);
+		// echo htmlspecialchars($_POST ['ingredients']) ;
 		
+		//check email 
+		if(empty($_POST['email'])){
+			echo 'An email is required <br />';
+		}
+		else{
+			$email = $_POST['email'];
+			if(!filter_var($email, FILTER_VALIDATE_EMAIL)){
+				echo 'Email must be valid <br />';
+			}
+		}
+		//check title
+		if (empty($_POST['title'])){
+			echo 'A title is required <br />';
+		}
+		else{
+			$title = $_POST['title'];
+		if(!preg_match('/^[a-zA-Z\s]+$/', $title)){
+			echo 'your title allows only whitespace and letters <br />' ;
+		}
+			
+		}
+		//check email 
+		if (empty($_POST['ingredients'])){
+			echo 'At least one ingredient is required <br />';
+		}
+		else{
+			$ingredient = $_POST['ingredients'];
+			$ingredientRegExp = '/^([a-zA-Z\s]+)(,[\s*[\sa-zA-Z]*)*$/';
+			if(!preg_match($ingredientRegExp, $ingredient))
+				echo 'Your ingredient should be letters or white space';
+		}
+			
 	}
-
 ?>
 
 <!DOCTYPE html>
@@ -24,7 +55,7 @@
 		<label> Ingredients (comma Separted): </label>
 		<input type="text" name="ingredients">
 		<div class="center">
-			<input type="submit" name="submit" value ="submit" class="btn brand z-depth-0"
+			<input type="submit" name="submit" value ="submit" class="btn brand z-depth-0">
 		</div>
 	</form>
 <?php include('templates/footer.php');?> <!-- footer -->

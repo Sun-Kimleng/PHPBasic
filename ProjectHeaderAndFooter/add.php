@@ -1,4 +1,5 @@
 <?php
+	$errors = ['email'=>'', 'title'=>'', 'ingredient'=>''];
 
 	if(isset($_POST['submit'])){
 		// echo htmlspecialchars( $_POST ['email']);
@@ -7,37 +8,46 @@
 		
 		//check email 
 		if(empty($_POST['email'])){
-			echo 'An email is required <br />';
+			$errors['email'] = 'An email is required <br />';
 		}
 		else{
 			$email = $_POST['email'];
 			if(!filter_var($email, FILTER_VALIDATE_EMAIL)){
-				echo 'Email must be valid <br />';
+				$errors['email']= '*Email must be valid';
 			}
 		}
 		//check title
 		if (empty($_POST['title'])){
-			echo 'A title is required <br />';
+			$errors['title'] = 'A title is required <br />';
 		}
 		else{
 			$title = $_POST['title'];
 		if(!preg_match('/^[a-zA-Z\s]+$/', $title)){
-			echo 'your title allows only whitespace and letters <br />' ;
+			$errors['title'] = '*Your title allows only whitespace and letters' ;
 		}
 			
 		}
-		//check email 
+		//check ingredient
 		if (empty($_POST['ingredients'])){
-			echo 'At least one ingredient is required <br />';
+			$errors['ingredient'] =  'At least one ingredient is required <br />';
 		}
 		else{
 			$ingredient = $_POST['ingredients'];
 			$ingredientRegExp = '/^([a-zA-Z\s]+)(,[\s*[\sa-zA-Z]*)*$/';
-			if(!preg_match($ingredientRegExp, $ingredient))
-				echo 'Your ingredient should be letters or white space';
+			if(!preg_match($ingredientRegExp, $ingredient)){
+				$errors['ingredient'] = '*Your ingredient should be letters or white space';
+			}
 		}
 			
+	
+	
+	if (array_filter($errors)){ // return true if there's  errors in form
+	// echo 'Errors in form';
+	}else{
+	//	echo 'Form is valid';
+	header('Location: index.php');
 	}
+}		
 ?>
 
 <!DOCTYPE html>
@@ -50,10 +60,13 @@
 	<form class="white" action ="add.php" method="POST"> <!-- send data to its own file (php upon these code -->
 		<label> Your Email: </label>
 		<input type="text" name="email">
+		<div class="red-text"><?php echo $errors['email']; ?></div>
 		<label> Your Title: </label>
 		<input type="text" name="title">
+		<div class="red-text"><?php echo $errors['title']; ?></div>
 		<label> Ingredients (comma Separted): </label>
 		<input type="text" name="ingredients">
+		<div class="red-text"><?php echo $errors['ingredient']; ?></div>
 		<div class="center">
 			<input type="submit" name="submit" value ="submit" class="btn brand z-depth-0">
 		</div>

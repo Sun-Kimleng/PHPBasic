@@ -6,5 +6,6 @@ Hacking learning - https://www.eduonix.com
 Testing Regular Expression - https://regex101.com/
 Find any projects - https://projectworlds.in/free-projects/php-projects/
 Design background Illustrator - https://www.youtube.com/watch?v=e3-VT0-ZVpI&list=PLSDgyAeLgEP4CBUy48kw6muGMa55osRaR
+Full Tutorial Illustrator - https://www.youtube.com/watch?v=_0lLWSwfmX8&list=PLkiM1tZke4mgObgITi5FL01sDHpz8wxx1
 Design LOGO Illustrator - https://www.youtube.com/watch?v=Rpl-KRKhY6c&list=PLQXitECZ-yRNeeCvDFlBOikn6AFgSXU2w&index=14
 Figma UI/UX Design - https://www.youtube.com/watch?v=2bA13vdv9h8&list=PLvnhVb8yYRQ3TDOsSgN0pf0XqG6E56IYM&index=8

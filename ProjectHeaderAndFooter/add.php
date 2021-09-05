@@ -55,7 +55,7 @@
 
 <?php include('templates/header.php');?> <!-- header -->
 
-<section class="container grey-text">
+<section class="container grey-text">  
 	<h4 class="center">Add a Pizza</h4>
 	<form class="white" action ="add.php" method="POST"> <!-- send data to its own file (php upon these code -->
 		<label> Your Email: </label>

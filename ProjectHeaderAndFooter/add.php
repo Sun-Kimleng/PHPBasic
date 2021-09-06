@@ -1,4 +1,5 @@
 <?php
+	include('config/db_connection.php');	
 	$errors = ['email'=>'', 'title'=>'', 'ingredient'=>''];
 
 	if(isset($_POST['submit'])){
@@ -45,7 +46,23 @@
 	// echo 'Errors in form';
 	}else{
 	//	echo 'Form is valid';
-	header('Location: index.php');
+	
+	//value that we want to save into database	
+	$email = mysqli_real_escape_string($conn, $_POST['email']);
+	$title = mysqli_real_escape_string($conn, $_POST['title']);
+	$ingredients = mysqli_real_escape_string($conn, $_POST['ingredients']);
+	//SQL statement
+	$sql = "INSERT INTO pizzas (title, email, ingredients) VALUES ('$title','$email','$ingredients') ";
+	
+	//save to db and check
+	if(mysqli_query($conn, $sql)){
+		//success
+		header('Location: index.php');
+	} else{
+	//error
+	echo 'query error: '.mysqli_error($conn);
+	}
+    
 	}
 }		
 ?>
@@ -55,7 +72,7 @@
 
 <?php include('templates/header.php');?> <!-- header -->
 
-<section class="container grey-text">  
+<section class="container grey-text">
 	<h4 class="center">Add a Pizza</h4>
 	<form class="white" action ="add.php" method="POST"> <!-- send data to its own file (php upon these code -->
 		<label> Your Email: </label>

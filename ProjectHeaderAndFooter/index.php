@@ -1,14 +1,6 @@
 <?php
-	$conn = mysqli_connect('localhost','leng','12345','LengLengPizza');
 	
-	//check connection works or not
-	if(!$conn){ //if connection is not work
-	echo 'Connection error: ' . mysqli_connect_error;
-	}
-	/* or 
-	if ($conn->connect_error){ //note that -> just like dot in javascript ex: name.style.color =  "red";
-		die("Connection failed: ". $conn ->connect_error;
-	*/ 
+include('config/db_connection.php');	
 	//Write query for all pizzas
 	$sql = 'SELECT id, title , ingredients FROM pizzas ORDER BY created_at';
 	$result = mysqli_query($conn, $sql);
@@ -38,9 +30,9 @@
 <h4 class="center gret-text">Pizza!</h4>
 
 <div class="container">
-	<div class="row">
+	<div class="row rows">
 	
-		<?php foreach($pizzas as $pizza){ ?>
+		<?php foreach($pizzas as $pizza): ?>
 		<div class="col s6 md3">
 			<div class="card z-depth-0">
 					<div class="card-content center">
@@ -50,23 +42,23 @@
 							<li><?php echo htmlspecialchars($ing); ?> </li>
 						<?php } ?>
 						</ul>
-						<div class="card-action right-align">
-							<a class ="brand-text" href="#">more info</a>
 						</div>
-				</div>	
+						<div class="card-action right-align">
+							<a class ="brand-text" href="details.php?id=<?php echo $pizza['id'] ?>">more info</a>
+						</div>
+					</div>
+				</div>
+			<?php endforeach; ?>
 			</div>
-		</div>
-		<?php } ?>
-	<?php if(count($pizzas) >=2){ ?>
+			
+	<?php if(count($pizzas) >=3){ ?>
 	<p>there are 3 or more pizzas</p> 
 	<?php } else{ ?>
 	<p>there are less than 3 pizzas</p>
 	<?php } ?>
 			
-		}
-		}
+		
 	</div>	
-</div>
 <?php include('templates/footer.php');?> <!-- footer -->
 
 </body>

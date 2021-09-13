@@ -1,5 +1,5 @@
 <head>
-	<title>Leng Leng Code</title>
+	<title>Leng Leng Pizza</title>
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
 	<style>
 		.brand {
@@ -17,7 +17,11 @@
 		.card-content{
 			height: 200px;
 		}
-		
+		.pizza{
+			width: 20%;
+			display: block;
+			margin: 0 auto;
+		}
 		
 	</style>
 </head>

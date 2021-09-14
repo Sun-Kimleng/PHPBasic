@@ -1,3 +1,16 @@
+<?php
+	session_start();
+	
+	if($_SERVER['QUERY_STRING'] == 'noname'){
+		unset($_SESSION['name']);
+	}
+	
+	//if $_SESSION['name'] was unset it will echo 'guest' instead (when you go to index.php?noname)
+	$name = $_SESSION['name'] ?? 'guest';
+	//get cookie
+	$gender = $_COOKIE['gender'] ?? 'unknown';
+?>
+
 <head>
 	<title>Leng Leng Pizza</title>
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
@@ -30,6 +43,8 @@
 		<div class="container">
 			<a href="index.php" class="brand-logo brand-text"> Leng Leng </a>
 			<ul id ="nav-mobile" class="right hide-on-small-and-down">
+				<li class="grey-text">Hello <?php echo htmlspecialchars($name); ?></li>
+				<li class="grey-text">&nbsp;(<?php echo htmlspecialchars($gender); ?>)</li>
 				<li><a href="add.php" class="btn brand z-depth-0">Add a Pizza</a></li>
 			</ul>
 		</div>

@@ -26,7 +26,7 @@ class student
     //destruct all properties when the work is done
     public function __destruct()
     {
-    	echo '<br />'.'All properties has been 				removed';
+    	echo '<br />'.'All properties has been removed';
     }
     //function
     public function stuDetail()

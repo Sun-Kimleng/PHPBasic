@@ -12,3 +12,5 @@ Figma UI/UX Design - https://www.youtube.com/watch?v=2bA13vdv9h8&list=PLvnhVb8yY
 Official Illustrator tutorial (good) - https://www.youtube.com/watch?v=IBouhf4seWQ&list=PLYfCBK8IplO4X-jM1Rp43wAIdpP2XNGwP
 Best wordpress toturial - https://www.youtube.com/watch?v=df5hfVID5mo&list=PLP7FTFIz1J9kQOnVcDuybGV5VTrRUr7AL
 wordpress first video - https://www.youtube.com/watch?v=k-wS9hGiyU8&t=3518s
+Tool for web development - https://www.youtube.com/watch?v=9CEW3Tmx2tg
+Flutter Project - https://www.youtube.com/watch?v=XBKzpTz65Io

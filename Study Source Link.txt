@@ -14,4 +14,5 @@ Best wordpress toturial - https://www.youtube.com/watch?v=df5hfVID5mo&list=PLP7F
 wordpress first video - https://www.youtube.com/watch?v=k-wS9hGiyU8&t=3518s
 Tool for web development - https://www.youtube.com/watch?v=9CEW3Tmx2tg
 Flutter Project - https://www.youtube.com/watch?v=XBKzpTz65Io
-more flutter project - https://www.youtube.com/watch?v=h-igXZCCrrc&list=PLegU0dMtqhK4nOMo3I3cAIZDbJkhD_kZ-
+More flutter project - https://www.youtube.com/watch?v=h-igXZCCrrc&list=PLegU0dMtqhK4nOMo3I3cAIZDbJkhD_kZ-
+Oracle Course Certificate - https://education.oracle.com/learn/oracle-cloud-infrastructure/pPillar_640

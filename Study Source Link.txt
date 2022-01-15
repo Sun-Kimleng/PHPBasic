@@ -14,6 +14,7 @@ Best wordpress toturial - https://www.youtube.com/watch?v=df5hfVID5mo&list=PLP7F
 wordpress first video - https://www.youtube.com/watch?v=k-wS9hGiyU8&t=3518s
 Tool for web development - https://www.youtube.com/watch?v=9CEW3Tmx2tg
 Flutter Project - https://www.youtube.com/watch?v=XBKzpTz65Io
+Laravel Migration - https://www.itsolutionstuff.com/post/laravel-one-to-many-eloquent-relationship-tutorialexample.html
 More flutter project - https://www.youtube.com/watch?v=h-igXZCCrrc&list=PLegU0dMtqhK4nOMo3I3cAIZDbJkhD_kZ-
 Oracle Course Certificate - https://education.oracle.com/learn/oracle-cloud-infrastructure/pPillar_640
 100Seconds of code - https://www.youtube.com/watch?v=DC471a9qrU4&list=PL0vfts4VzfNiI1BsIK5u7LpPaIDKMJIDN

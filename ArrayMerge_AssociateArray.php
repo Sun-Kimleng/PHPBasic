@@ -3,7 +3,7 @@
 <body>
 
 <?php
-$array1 = [1, 2, 3, "Four"];
+$array1 = [1, 2, 3, "Four", "Five"];
 $array2 = ["Five", 6, 7, 8];
 $array3 = ["Nine", 10];
 

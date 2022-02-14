@@ -18,3 +18,6 @@ Laravel Migration - https://www.itsolutionstuff.com/post/laravel-one-to-many-elo
 More flutter project - https://www.youtube.com/watch?v=h-igXZCCrrc&list=PLegU0dMtqhK4nOMo3I3cAIZDbJkhD_kZ-
 Oracle Course Certificate - https://education.oracle.com/learn/oracle-cloud-infrastructure/pPillar_640
 100Seconds of code - https://www.youtube.com/watch?v=DC471a9qrU4&list=PL0vfts4VzfNiI1BsIK5u7LpPaIDKMJIDN
+Laravel Tips - https://www.youtube.com/watch?v=ih-4IDDm9Hg&list=PLwYmiDcaBhtDDq5bNMD8tjttNvNwUNBKp&index=8
+Photoshop - https://www.youtube.com/watch?v=MZpmhkZNfOw&list=PL7JpMMpENaD3KL_lvmw4eS5U5AD746yKB&index=2
+Laravel Passport - https://www.toptal.com/laravel/passport-tutorial-auth-user-access
